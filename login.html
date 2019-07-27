@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+body {
+ background-image: url("t4.jpg");
+ background-size: 100% 100%;
+ }
+</style>
+<script>
+	
+	function validateForm() 
+	{
+  var x = document.forms["myForm"]["uname"].value;
+   var y = document.forms["myForm"]["pass"].value;
+  if (x == "" || y == "") {
+    alert("Username and Password must be filled out");
+    return false;
+  }
+}
+
+</script>
+</script>
+</head>
+   <body>
+   <center>
+   <h1 style="color:white"><i>To Travel is to LIVE!!!</i><h1>
+   <h2><i>Welcome to our Travel page!</i></h2>
+      <form name="myForm" action="f.html" onsubmit="return validateForm()" method="post">
+	  <h3 align:center>Login</h3>
+         <b>Username:</b><input type="text" name="uname">
+         <br><br>
+         <b>Password:</b><input type="text" name="pass">
+         <br><br>
+         <button onclick="fun1()">Login</button>
+      </form>
+	  </center>
+   </body>
+</html>
